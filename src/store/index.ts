@@ -1,16 +1,16 @@
-import { createStore } from 'easy-peasy' 
-import { persist } from 'easy-peasy';
+import { createStore } from "easy-peasy";
+import { persist } from "easy-peasy";
 
-import model, { Model } from './model'
+import model, { Model } from "./model";
 
 export interface StoreModel {
-    model: Model
+  model: Model;
 }
 
 const storeModel: StoreModel = {
-    model,
-}
+  model,
+};
 
-const store = createStore( persist(storeModel)) 
+const store = createStore(persist(storeModel, { storage: "localStorage" }));
 
-export default store
+export default store;
