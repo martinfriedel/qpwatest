@@ -15,7 +15,7 @@ const App: React.FC = () => (
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">Items</Link>
           </li>
         </ul>
       </nav>
@@ -28,7 +28,6 @@ const App: React.FC = () => (
         </Route>
       </Switch>
     </Router>
-    Items:
   </StoreProvider>
 );
 
